@@ -22,6 +22,9 @@ public class BMICalculator {
 
         if((bmi>=18.5) && (bmi<=25))
             msg = "You are within the ideal weight range.";
+        else if(bmi < 18.5){
+            msg = "You are UNDERweight. You should see your doctor.";
+        }
         else
             msg = "You are overweight. You should see your doctor.";
 
